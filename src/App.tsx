@@ -14,6 +14,9 @@ function App(): React.JSX.Element {
             <p>
                 Created by Benjamin Meredith
             </p>
+            <p>
+                Hello World
+            </p>
         </div>
     );
 }
