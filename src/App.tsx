@@ -21,7 +21,7 @@ function App(): React.JSX.Element {
             <h1>
                 Header
             </h1>
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Ffunny-dogs&psig=AOvVaw2ODL5_qTthV1oR0wdV9oIh&ust=1757364734679000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNiBj_zDx48DFQAAAAAdAAAAABAE" alt="Placeholder Image" />
+            <img src="https://media.istockphoto.com/id/1407655089/photo/funny-pomeranian-dog-summer-ready-for-bath-wrapped-with-a-towel-and-sunglasses-isolated-on.jpg?s=612x612&w=0&k=20&c=wCmR5IKoVVTm5NQY9UL2hBTTkU0AvlG3gnEK8AWUWr8=" alt="Placeholder Image" />
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
