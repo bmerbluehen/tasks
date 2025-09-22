@@ -199,7 +199,22 @@ export function editOption(
     targetOptionIndex: number,
     newOption: string
 ): Question[] {
-    return [];
+    const updatedQuestions = questions.map((q: Question) => {
+        if (q.id === targetId) {
+            let newOptions: string[];
+            if (targetOptionIndex === -1) {
+                newOptions = [...q.options, newOption];
+            } else {
+                newOptions = q.options.map((opt: string, index: number) =>
+                    index === targetOptionIndex ? newOption : opt
+                );
+            }
+            return {...q, options: newOptions};
+        } else {
+            return q;
+        }
+    });
+    return updatedQuestions;
 }
 
 /***
