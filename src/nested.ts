@@ -147,7 +147,14 @@ export function renameQuestionById(
     targetId: number,
     newName: string
 ): Question[] {
-    return [];
+    const updatedQuestions = questions.map((q: Question) => {
+        if (q.id === targetId) {
+            return {...q, name: newName};
+        } else {
+            return q;
+        }
+    });
+    return updatedQuestions;
 }
 
 /***
