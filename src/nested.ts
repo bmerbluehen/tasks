@@ -228,5 +228,13 @@ export function duplicateQuestionInArray(
     targetId: number,
     newId: number
 ): Question[] {
-    return [];
+    const result: Question[] = [];
+    for (const q of questions) {
+        result.push(q);
+        if (q.id === targetId) {
+            const duplicate = {...q, id: newId, name: `Copy of ${q.name}`};
+            result.push(duplicate);
+        }
+    }
+    return result;
 }
